@@ -1,0 +1,28 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI tool that grabs weather forcast data for given location.",
+  "main": "src/index.ts",
+  "bin": {
+    "getWet": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./build/index.js \"hello world\"",
+    "dev": "concurrently \"nodemon ./build/index.js\" \"tsc -w \""
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.27",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
