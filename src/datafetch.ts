@@ -1,31 +1,38 @@
 import "dotenv/config"
 
 interface GeoData {
-    ip: string,
-    city: string
+    city: string,
+    state_prov: string,
+    country_code2: string,
+    latitude: string,
+    longitude: string
 }
 
 interface WthData {
-
+    current: {
+        temp_f: number
+        condition: {
+            text: string
+        }
+        humidity: number,
+        feelslike_f: number
+    }
 }
 
 const fetchGeoData = async () => {
     
-    const geoRes = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.GEO_API_KEY}&fields=city`);
-    const data = await geoRes.json() as GeoData;
-    console.log(`${data.city}`);
+        const res = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.GEO_API_KEY}&fields=geo`);
+        const data = await res.json() as GeoData;
 
-    return data.city;
-
+        return data;
 }
 
 const fetchWthData = async (city: string) => {
 
-    const wthRes = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${city}`);
-    const res = await wthRes.json();
-    console.log(`${JSON.stringify(res)}`);
+    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${city}`);
+    const data = await res.json() as WthData;
 
-    return res;
+    return data;
 }
 
 export {
