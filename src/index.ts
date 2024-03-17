@@ -3,6 +3,8 @@ import "dotenv/config";
 import { fetchGeoData, fetchWthData } from "./datafetch.js";
 import * as log from "./logger.js";
 
+
+
 const run = async () => {
     try {
          
