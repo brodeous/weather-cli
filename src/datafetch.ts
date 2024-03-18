@@ -1,6 +1,6 @@
 import "dotenv/config"
 
-interface GeoData {
+export type GeoData = {
     city: string,
     state_prov: string,
     country_code2: string,
@@ -8,7 +8,7 @@ interface GeoData {
     longitude: string
 }
 
-interface WthData {
+export type WthData = {
     current: {
         temp_f: number
         condition: {
@@ -37,5 +37,5 @@ const fetchWthData = async (city: string) => {
 
 export {
     fetchGeoData,
-    fetchWthData
+    fetchWthData,
 }
