@@ -14,7 +14,7 @@ const output = (geo: GeoData, wth: WthData, args: any) => {
 const printExpand = (geo: GeoData, wth: WthData) => {
 
     // print header
-    console.log(`\n Weather Data`.padEnd(w/2), `Time: [${getTime()}]`.padStart(w/2));
+    console.log(`\n Weather Data`.padEnd(w/2), chalk.cyan(`Time: [${getTime()}]`.padStart(w/2)));
     console.log(` `.padEnd(w, `-`));
 
     console.log(`> City`.padEnd(w/2), `${geo.city}`.padStart(w/2));
