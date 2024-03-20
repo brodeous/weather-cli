@@ -1,12 +1,8 @@
 import chalk from 'chalk';
 import fs from 'fs';
 import config from './config.js';
+import getTime from './timefetch.js'
 
-const currentTime = new Date();
-const currentHour = currentTime.getHours() < 10 ? `${0}${currentTime.getHours()}` : `${currentTime.getHours()}`;
-const currentMinute = currentTime.getMinutes() < 10 ? `${0}${currentTime.getMinutes()}` : `${currentTime.getMinutes()}`;
-const currentSecond = currentTime.getSeconds() < 10 ? `${0}${currentTime.getSeconds()}` : `${currentTime.getSeconds()}`;
-const time = chalk.cyan(`${currentHour}:${currentMinute}:${currentSecond}`);
 
 const info = (msg: string) => {
     const text = chalk.white(`[i] ${msg}`);
@@ -29,7 +25,7 @@ const error = (msg: string) => {
 }
 
 const printLog = (log: string) => {
-    fs.appendFile("logs", `[${time}] ${log}\n`, (error) => {
+    fs.appendFile("logs", `[${getTime()}] ${log}\n`, (error) => {
         if (error) throw error;
     });
 
