@@ -25,7 +25,7 @@ const error = (msg: string) => {
 }
 
 const printLog = (log: string) => {
-    fs.appendFile("logs", `[${getTime()}] ${log}\n`, (error) => {
+    fs.appendFile("logs", `[${chalk.cyan(getTime())}] ${log}\n`, (error) => {
         if (error) throw error;
     });
 
