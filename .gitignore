@@ -2,5 +2,3 @@ node_modules/
 .env
 build/
 logs
-icons/txt/*
-!icons/txt/README.md
