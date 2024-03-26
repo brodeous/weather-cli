@@ -1,0 +1,51 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\night\116.png -o C:\Users\meeke\code\weather-cli\icons\txt\night\116.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\night\116.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\night\116.txt 
+Resolution: 52x44 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+      `~(jxt{!.                                     
+    '{ULLLLLLLc<                                    
+   :cLLLLLLLLLLL[                                   
+  :YLLLv[>l|LLL{.                                   
+ 'vLLJ_.  :JLL?                                     
+ [LLJl    jLL|                                      
+'YLL-    ILLU`                                      
+>LLc.    1LL(                                       
+{LL1     xLL<                                       
+\LL+     zLL:                                       
+tLL<     YLL,                                       
+(LL?     cLLl                                       
+?LLf     tLL?                  '`^`'                
+,LLC,    _LLn               ^;i>>>>>!;`             
+ jLLr.   `ULL>            `l>>>>>>>>>>>I'           
+ ILLL/'   ?LLX^          ,>>>>>ilIli>>>>i"          
+  [LLLv<' .jLLu"        ;>>>i;`     `;>>>>,         
+   )LLLLUxjcLLLX~      ,>>>l'         `!>>>"        
+    -ULLLLLLLLLu;     `>>>;.           .l>>i'       
+     ^{cLLLLCx+.      l>>l              .!>>I       
+        ^!iI'    '";I!>>i'               `>>>'      
+               .;>>>>>>>:                 I>>:      
+              ^i>>>>>>>>'                 ^>>l      
+             ^>>>>l,^`^,                  .>>i      
+            'i>>i^                         i>>.     
+            I>>!'                          !>>`     
+           `>>>`                           i>>>:    
+           ;>>;                           .i>>>>I.  
+         .:i>>`                             `l>>>:  
+        '!>>>>                                ;>>>' 
+       'i>>>i;                                 l>>; 
+       I>>i"                                   `>>i.
+      `>>>`                                     !>>'
+      ,>>I                                      I>>^
+      I>>"                                      l>>`
+      I>>^                                      i>>'
+      ;>>,                                     ^>>i 
+      ">>!.                                   .!>>: 
+      .i>>;                                  'l>>i' 
+       ,>>>l^'.............................`:i>>>"  
+        ;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>,   
+         :>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!^    
+          ':li!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!;^.     
+                                                    

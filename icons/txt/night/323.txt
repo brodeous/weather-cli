@@ -1,0 +1,64 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\night\323.png -o C:\Users\meeke\code\weather-cli\icons\txt\night\323.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\night\323.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\night\323.txt 
+Resolution: 53x57 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                                                     
+       `~(jxt{!.                                     
+     '{ULLLLLLLc<                                    
+    :cLLLLLLLLLLL[                                   
+   :YLLLv[>l|LLL{.                                   
+  'vLLJ_.  :JLL?                                     
+  [LLJl    jLL|                                      
+ 'YLL-    ILLU`                                      
+ >LLc.    1LL(                                       
+ {LL1     xLL<                                       
+ \LL+     zLL:                                       
+ tLL<     YLL,                                       
+ (LL?     cLLl                                       
+ ?LLf     tLL?                  `,;:`                
+ ,LLC,    _LLn               ;?|ttttt(-,             
+  jLLr.   `ULL>            :{ttttttttttt["           
+  ILLL/'   ?LLX^          <ttttt\){)\tttt/!          
+   [LLLv<' .jLLu"        -ttt/]!:::::i[/ttt>         
+    )LLLLUxjcLLLX~      ~ttt1l:::::::::!(tttl        
+     -ULLLLLLLLLu;     :/tt[;:::::::::::;1tt\^       
+      ^{cLLLLCx+.      1tt1;:::::::::::::;(tt]       
+         ^!iI'    `!-}1tt/I:::::::::::::::itt/^      
+                `-/tttttt?:::::::::::::::::}tt~      
+               ;|tttttttt!:::::::::::::::::<tt{      
+              I/ttt1_>i<-::::::::::::::::::;tt/      
+             ^\tt\>:::::::::::::::::::::::::|tt`     
+             [tt|I::::::::::::::::::::::::::(tt:     
+            :tt/!:::::::::::::::::::::::::::\tt/~.   
+            -tt[:::::::::::::::::::::::::::;\tttt?.  
+          '+\tti:::::::::::::::::::::::::::::>1ttt+  
+         "(ttt/;:::::::::::::::::::::::::::::::]tt/" 
+        `|ttt|[:::::::::::::::::::::::::::::::::1tt- 
+        [tt/~:::::::::::::::::::::::::::::::::::itt\.
+       "ttt>:::::::::::::::::::::::::::::::::::::(tt"
+       <tt}::::::::::::::::::::::::::::::::::::::{tt;
+       ?tt~::::::::::::::::::::::::::::::::::::::{tt:
+       [tt>:::::::::::::::::::::::::::::::::::::;\tt^
+       -tt_:::::::::::::::::::::::::::::::::::::<tt( 
+       !tt(;:::::::::::::::::::::::::::::::::::I(tt+ 
+       '\tt]::::::::::::::::::::::::::::::::::I1tt\` 
+        >ttt1>IIIIIIIIIIIIIIIIIIIIIIIIIIIIII!-\tttl  
+         ?tttttttttttttttttttttttttttttttttttttt/i   
+          ~/ttttttttttttttttttttttttttttttttttt);    
+           ^~{(((((((((((((((((((((((((((((()?I.     
+                                                     
+                                                     
+                                                     
+                         .:; ^l`                     
+                         ">>^!>l                     
+                          l>i>>`                     
+                        :;I>>>i;;`                   
+                        !>>>>>>>>^                   
+                        ;Il>>>iI;`                   
+                          I>>>>'                     
+                         ^>>"!>I                     
+                         .;I ^!`                     
+                                                     

@@ -1,0 +1,59 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\386.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\386.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\386.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\386.txt 
+Resolution: 55x52 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                                                       
+                '[[?                                   
+          `     '[[?     .`                            
+        '>[,    '[[?     !]!.                          
+        I[[-.   '[[?    `][["                          
+        .-[[l   '[[?    <[[<                           
+         ,[[]'  .`'`   "[[]`                           
+          ~[i'         ^<[!                            
+   `'     `^   .^:;,`    ,.       ,i<i"                
+   ~?I.      `>][[[[[-l'      .~nwkkkkkZri             
+  ,[[[-,   .l[[[[[[[[[[?,    iJkkkkkkkkkkkXI           
+  `~[[[?' .>[[[[?-_-][[[[; .(bkkkkdwZwdkkkkd[          
+    ,-[;  i[[[?>!!!!!<][[[,rkkkbQcnnnnnz0bkkk1         
+     .;. "[[[_!!!!!!!!i?[[vkkkmvnnnnnnnnncqkkk?        
+         +[[-!!!!!!!!!!i]/bkk0nnnnnnnnnnnnnmkkp,       
+        `[[[i!!!!!!!!!!!<Zkkmnnnnnnnnnnnnnnnqkku       
+        I[[-!!!!!!!!<|cJ0kkbvnnnnnnnnnnnnnnnzkkb;      
+`++++>  >[[~!!!!!!<vdkkkkkkQnnnnnnnnnnnnnnnnnZkk\      
+"[[[[+  >[[<!!!!!{qkkkkkkkkcnnnnnnnnnnnnnnnnnYkkJ      
+"[[[[_  >[[~!!!!1bkkkwCXzYLnnnnnnnnnnnnnnnnnnukkd.     
+.'''''  l[[+!!!+pkkdXnnnnnnnnnnnnnnnnnnnnnnnnndkk"     
+        ,[[]!!!Jkkpvnnnnnnnnnnnnnnnnnnnnnnnnnnqkk>     
+        .-[[~![kkbcnnnnnnnnnnnnnnnnnnnnnnnnnnndkkb\.   
+      '  I[[[<vkk0nnnnnnnnnnnnnnnnnnnnnnnnnnnndkkkku.  
+    'i[" .+[}zdkkznnnnnnnnnnnnnnnnnnnnnnnnnnnnnXwkkk/  
+  .;?[[+. '1wkkkbnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn0kkbI 
+  I[[[[>' ,wkkkpOnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmkkx 
+  .-[+^   ckkbUnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnzkkq.
+   ,:    lkkkXnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnpkkI
+         (kkOnnnnnnnnnnnnnnnnnnnnrrrxnnnnnnnnnnnnnnmkk<
+         ukkUnnnnnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnnmkk>
+         ckkYnnnnnnnnnnnnnnnnnnn\[[(nnnnnnnnnnnnnnndkk:
+         rkkCnnnnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnnYkkO 
+         ]kkqnnnnnnnnnnnnnnnnnn\[[(nnnnnnnnnnnnnnupkk/ 
+         `qkk0nnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnuwkkq" 
+          1kkkmXuuuuuuuuuuuuuu/[[(uuuuuuuuuuuucLdkkk-  
+          .nkkkkkkkkkkkkkkkkkd{[[[[}qkkkkkkkkkkkkkb{   
+           .\dkkkkkkkkkkkkkkkz[[[[[ukkkkkkkkkkkkkO<    
+             :\JZZZZZZZZZZZZO)}}[[}QZZZZZZZZZZQn_.     
+                               i[[i                    
+                              '][[`                    
+                              i[[i                     
+                             '][[[[[`                  
+                             i[[[[[i                   
+                            '][[[[[`                   
+                            .''i[[i                    
+                              '][[`                    
+                              i[[i                     
+                             '][[`                     
+                             i[[i                      
+                            '][[`                      
+                                                       

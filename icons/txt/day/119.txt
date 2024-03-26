@@ -1,0 +1,37 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\119.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\119.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\119.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\119.txt 
+Resolution: 44x30 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                     ',!llllI;,.            
+                   .;l!i>>>>>>iI".          
+                 .`Ii>>>i!l!i>>>iI`         
+                .^!>>iI"`'''`"Ii>iI^        
+               .`!>>l^'.     .'"l>iI^       
+               'I>iI`.         .`I>iI'      
+              .">>l'            .`l>i,      
+           `,;!i>!^.             ."i>I'     
+        .";!!i>>i;.               ';>!:     
+       ':i>>>>>>!"                .">i;     
+      'I>>>!:"",,'                 `!>;.    
+     .;i>!,''.....                 `l>I'    
+    .^>>!^.                        'I>l`    
+    '!>!".                         `l>>!"   
+   .`>iI.                          `l>>il"  
+   ^I>i,                           .`"l>>l" 
+ ."!i>!`                             .`;>>I'
+.:i>>i;'                              .`I>i"
+^i>i:`'.                               ."i>;
+l>i,.                                   `l>l
+>>I'                                    ';>l
+>i:                                     ';>l
+>i,                                     'l>I
+>i:                                    .^i>;
+>>I'                                   'I>il
+I>i:.                                 ';i>I'
+`>>i;`'.............................',li>!, 
+'">>i!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!i>>i". 
+ '^i>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>l'   
+  .."Il!!!!!!!!!!!!!!!!!!!!!!!!!!!!!I,`..   

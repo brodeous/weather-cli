@@ -1,0 +1,51 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\389.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\389.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\389.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\389.txt 
+Resolution: 46x44 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                         ^l<>:.               
+                      It0kkkkkqc-.            
+                    ,ubkkkkkkkkkkQ~           
+                   +qkkkkbwmmpkkkkkf.         
+                  ]bkkkZXnnnnnvLdkkkv.        
+                 <bkkpznnnnnnnnnuZkkkj        
+                ^mkkwunnnnnnnnnnnnQkkk_       
+                fkkdunnnnnnnnnnnnnnOkkZ'      
+           '_fzJdkkYnnnnnnnnnnnnnnnudkk[      
+         .(wkkkkkkwnnnnnnnnnnnnnnnnnCkkU      
+        :LkkkkkkkkCnnnnnnnnnnnnnnnnnubkb`     
+       ;mkkkpLYzXCvnnnnnnnnnnnnnnnnnnwkki     
+      'CkkbCnnnnnnnnnnnnnnnnnnnnnnnnnOkk-     
+      (kkbXnnnnnnnnnnnnnnnnnnnnnnnnnn0kk|     
+     'qkkCnnnnnnnnnnnnnnnnnnnnnnnnnnnOkkkv^   
+     -kkqnnnnnnnnnnnnnnnnnnnnnnnnnnnnmkkkkQ"  
+   .}ZkkLnnnnnnnnnnnnnnnnnnnnnnnnnnnnncOkkkU. 
+  `XkkkkXnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnUbkk} 
+ .YkkkbmvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnLkkO.
+ 1kkkQnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndkk!
+.mkkLnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnOkk{
+>kkpnnnnnnnnnnnnnnnnnnnnxrrxnnnnnnnnnnnnnnCkk\
+}kk0nnnnnnnnnnnnnnnnnnnn)[[/nnnnnnnnnnnnnnLkk|
+1kkQnnnnnnnnnnnnnnnnnnnj[[{xnnnnnnnnnnnnnnZkk[
+?kkZnnnnnnnnnnnnnnnnnnn)[[/nnnnnnnnnnnnnnubkk:
+,kkbvnnnnnnnnnnnnnnnnnj[[{xnnnnnnnnnnnnnnZkkJ 
+ Ykkwunnnnnnnnnnnnnnnn)[[/nnnnnnnnnnnnnn0kkk~ 
+ !bkkpUvuuuuuuuuuuuuur[[{uuuuuuuuuuuucJqkkkj  
+  }bkkkkkkkkkkkkkkkkkf[[[[[Lkkkkkkkkkkkkkku.  
+   -wkkkkkkkkkkkkkkkO[[[[[|kkkkkkkkkkkkkq{.   
+    `1XOZZZZZZZZZZZZf}}[[[YZZZZZZZZZZOc[`     
+                      ,[[_.                   
+                      +[[:                    
+                     ,[[_.                    
+                     +[[[[[:                  
+                    ,[[[[[_.                  
+                    +[[[[[:                   
+                    '';[[_.                   
+                      +[[:                    
+                     ,[[_.                    
+                     +[[:                     
+                    ,[[_.                     
+                    +[[:                      
+                                              

@@ -1,0 +1,39 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\night\119.png -o C:\Users\meeke\code\weather-cli\icons\txt\night\119.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\night\119.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\night\119.txt 
+Resolution: 53x32 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+         ^li;'                  `,;:`                
+      ^}cLLLLCr+.            ;?|ttttt(-,             
+     _ULLLLLLLLLu;         :{ttttttttttt["           
+    )LLLLUnjcLLLY~        <ttttt\){)\tttt/!          
+   [LLLc~' .jLLv"        -ttt/]!:::::i[/ttt>         
+  ILLL/'   ?LLX^        ~ttt1l:::::::::!(tttl        
+  jLLr.   `YLL>        :/tt[;:::::::::::;1tt\^       
+ ,LLC,    _LLn         1tt1;:::::::::::::;(tt]       
+ ?LLf     tLL?    `!-}1tt/I:::::::::::::::itt/^      
+ (LL?     cLLl  `-/tttttt?:::::::::::::::::}tt~      
+ tLL<     YLL, ;|tttttttt!:::::::::::::::::<tt{      
+ \LL+     zLL:I/ttt1_>i<-::::::::::::::::::;tt/      
+ {LL{     xLL+\tt\>:::::::::::::::::::::::::|tt`     
+ >LLc.    1LL/tt|I::::::::::::::::::::::::::(tt:     
+ 'YLL-    ILYtt/!:::::::::::::::::::::::::::\tt/~.   
+  [LLJl    jutt[:::::::::::::::::::::::::::;\tttt?.  
+  'vLLJ+. '?ttti:::::::::::::::::::::::::::::>1ttt+  
+   :YLLLu}\ttt/;:::::::::::::::::::::::::::::::]tt/" 
+    :cLLJfttt|[:::::::::::::::::::::::::::::::::1tt- 
+     '{Jxtt/~:::::::::::::::::::::::::::::::::::itt\.
+       :ttt>:::::::::::::::::::::::::::::::::::::(tt"
+       <tt}::::::::::::::::::::::::::::::::::::::{tt;
+       ?tt~::::::::::::::::::::::::::::::::::::::{tt:
+       [tt>:::::::::::::::::::::::::::::::::::::;\tt^
+       -tt_:::::::::::::::::::::::::::::::::::::<tt( 
+       !tt(;:::::::::::::::::::::::::::::::::::I(tt+ 
+       '\tt]::::::::::::::::::::::::::::::::::I1tt\` 
+        >ttt1>IIIIIIIIIIIIIIIIIIIIIIIIIIIIII!-\tttl  
+         ?tttttttttttttttttttttttttttttttttttttt/i   
+          ~/ttttttttttttttttttttttttttttttttttt);    
+           ^~{(((((((((((((((((((((((((((((()?I.     
+                                                     

@@ -1,0 +1,51 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\395.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\395.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\395.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\395.txt 
+Resolution: 46x44 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                         ^l<>:.               
+                      It0kkkkkqc-.            
+                    ,ubkkkkkkkkkkQ~           
+                   +qkkkkbwmmpkkkkkf.         
+                  ]bkkkZXnnnnnvLdkkkv.        
+                 <bkkpznnnnnnnnnuZkkkj        
+                ^mkkwunnnnnnnnnnnnQkkk_       
+                fkkdunnnnnnnnnnnnnnOkkZ'      
+           '_fzJdkkYnnnnnnnnnnnnnnnudkk[      
+         .(wkkkkkkwnnnnnnnnnnnnnnnnnCkkU      
+        :LkkkkkkkkCnnnnnnnnnnnnnnnnnubkb`     
+       ;mkkkpLYzXCvnnnnnnnnnnnnnnnnnnwkki     
+      'CkkbCnnnnnnnnnnnnnnnnnnnnnnnnnOkk-     
+      (kkbXnnnnnnnnnnnnnnnnnnnnnnnnnn0kk|     
+     'qkkCnnnnnnnnnnnnnnnnnnnnnnnnnnnOkkkv^   
+     -kkqnnnnnnnnnnnnnnnnnnnnnnnnnnnnmkkkkQ"  
+   .}ZkkLnnnnnnnnnnnnnnnnnnnnnnnnnnnnncOkkkU. 
+  `XkkkkXnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnUbkk} 
+ .YkkkbmvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnLkkO.
+ 1kkkQnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndkk!
+.mkkLnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnOkk{
+>kkpnnnnnnnnnnnnnnnnnnnnnnnnnxrrxnnnnnnnnnCkk\
+}kk0nnnnnnnnnnnnnnnnnnnnnnnnn)[[/nnnnnnnnnLkk|
+1kkQnnnnnnnnnnnnnnnnnnnnnnnnj[[{xnnnnnnnnnZkk[
+?kkZnnnnnnnnnnnnnnnnnnnnnnnn)[[/nnnnnnnnnubkk:
+,kkbvnnnnnnnnnnnnnnnnnnnnnnj[[{xnnnnnnnnnZkkJ 
+ Ykkwunnnnnnnnnnnnnnnnnnnnn)[[/nnnnnnnnn0kkk~ 
+ !bkkpUvuuuuuuuuuuuuuuuuuur[[{uuuuuuucJqkkkj  
+  }bkkkkkkkkkkkkkkkkkkkkkkf[[[[[Lkkkkkkkkku.  
+   -wkkkkkkkkkkkkkkkkkkkkO[[[[[|kkkkkkkkq{.   
+    `1XOZZZZZZZZZZZZZZZZZf}}[[[YZZZZZOc[`     
+                           ,[[_.              
+                           +[[:               
+                          ,[[_.               
+             "!.'!^       +[[[[[:             
+            '>>:;>i.     ,[[[[[_.             
+             :>>>>,      +[[[[[:              
+           ";;>>>>;;"    '';[[_.              
+           ;>>>>>>>>;      +[[:               
+           ,II>>>>I;"     ,[[_.               
+             ,>>>>"       +[[:                
+            '>>;;>i.     ,[[_.                
+            .,!.'i"      +[[:                 
+                                              

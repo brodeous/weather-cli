@@ -1,0 +1,29 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\night\113.png -o C:\Users\meeke\code\weather-cli\icons\txt\night\113.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\night\113.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\night\113.txt 
+Resolution: 19x22 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                   
+      '-fXLCzt+'   
+     _YLLLLLLLLX~  
+   '\LLLLLCCLLLLY: 
+   /LLLz?, `zLLx^  
+  -LLL('   /LLn'   
+ `YLL(    lLLU"    
+ ?LLc.    tLL{     
+ jLL-    .JLL,     
+ ULL^    ;LLX      
+'LLU     >LLx      
+'LLU     >LLx      
+ ULL^    ;LLX      
+ rLL-    .JLL,     
+ ?LLc.    tLL{     
+ `YLL(    !LLJ"    
+  -LLL('   /LLn'   
+   /LLLz?" `zLLr^  
+   '/LLLLLCCLLLLY: 
+     -YLLLLLLLLX~  
+      `-jXLLXf_'   
+                   

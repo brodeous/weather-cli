@@ -1,0 +1,49 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\185.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\185.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\185.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\185.txt 
+Resolution: 46x42 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                         ',;:^                
+                      "+)ttttt\]l.            
+                    ^?ttttttttttt);           
+                   I\tttt/){1|ttttt_.         
+                  !/ttt}>;::::l-\ttt].        
+                 ;/tt|i:::::::::I}ttt-        
+                '|tt)I::::::::::::?tttI       
+                +tt\I::::::::::::::[tt(.      
+           .I_[{/tt<:::::::::::::::;|tt!      
+         .<|tttttt):::::::::::::::::_tt}      
+        ^1tttttttt+:::::::::::::::::I/t/'     
+       ^|ttt(?>i>-l::::::::::::::::::)tt:     
+      .1tt/_;::::::::::::::::::::::::}ttl     
+      <tt/>::::::::::::::::::::::::::[tt~     
+     '\tt+:::::::::::::::::::::::::::}ttt]'   
+     ltt(;:::::::::::::::::::::::::::{tttt)`  
+    i(tt-:::::::::::::::::::::::::::::![ttt{. 
+  '}tttt>:::::::::::::::::::::::::::::::~/tti 
+ .}ttt\{I::::::::::::::::::::::::::::::::-tt( 
+ >ttt?;::::::::::::::::::::::::::::::::::;\tt,
+.|tt-:::::::::::::::::::::::::::::::::::::[tti
+:tt|;:::::::::::::::::::::::::::::::::::::-tt~
+itt[::::::::::::::::::::::::::::::::::::::-tt~
+>tt?::::::::::::::::::::::::::::::::::::::}tt!
+!tt{:::::::::::::::::::::::::::::::::::::I/tt^
+^tt/l::::::::::::::::::::::::::::::::::::}tt{ 
+ }tt);:::::::::::::::::::::::::::::::::;]ttt; 
+ ,/tt(~IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIl+(ttt_  
+  ittttttttttttttttttttttttttttttttttttttt?.  
+   l\ttttttttttttttttttttttttttttttttttt\i    
+    '>})((((((((((((((((((((((((((((()[i'     
+                                              
+                                              
+                                              
+                                              
+                                              
+          :llll. .lll. .lll. .lll.            
+          'lll,  "ll,  "ll,  "ll,             
+           :ll. .lll. .lll. .lll.             
+           'l,  "ll,  "ll,  "ll,              
+            :. .lll. .lll. .lll.              
+            .                                 

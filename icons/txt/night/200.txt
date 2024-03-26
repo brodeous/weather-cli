@@ -1,0 +1,64 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\night\200.png -o C:\Users\meeke\code\weather-cli\icons\txt\night\200.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\night\200.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\night\200.txt 
+Resolution: 53x57 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                                                     
+       `~(jxt{!.                                     
+     '{ULLLLLLLc<                                    
+    :cLLLLLLLLLLL[                                   
+   :YLLLv[>l|LLL{.                                   
+  'vLLJ_.  :JLL?                                     
+  [LLJl    jLL|                                      
+ 'YLL-    ILLU`                                      
+ >LLc.    1LL(                                       
+ {LL1     xLL<                                       
+ \LL+     zLL:                                       
+ tLL<     YLL,                                       
+ (LL?     cLLl                                       
+ ?LLf     tLL?                  ,i<i"                
+ ,LLC,    _LLn              .~nwkkkkkZri             
+  jLLr.   `ULL>            iJkkkkkkkkkkkXI           
+  ILLL/'   ?LLX^         .(bkkkkdwZwdkkkkd[          
+   [LLLv<' .jLLu"       .rkkkbQcnnnnnz0bkkk1         
+    )LLLLUxjcLLLX~      |kkkmvnnnnnnnnncqkkk?        
+     -ULLLLLLLLLu;     >bkk0nnnnnnnnnnnnnmkkp,       
+      ^{cLLLLCx+.     .Ckkmnnnnnnnnnnnnnnnqkku       
+         ^!iI'    "[xXLkkbvnnnnnnnnnnnnnnnzkkb;      
+                "rdkkkkkkQnnnnnnnnnnnnnnnnnZkk\      
+               ~wkkkkkkkkcnnnnnnnnnnnnnnnnnYkkJ      
+              +bkkkwCXzYLnnnnnnnnnnnnnnnnnnukkd.     
+             ;qkkdXnnnnnnnnnnnnnnnnnnnnnnnnndkk"     
+             Xkkpvnnnnnnnnnnnnnnnnnnnnnnnnnnqkk>     
+            >kkbcnnnnnnnnnnnnnnnnnnnnnnnnnnndkkb\.   
+            jkk0nnnnnnnnnnnnnnnnnnnnnnnnnnnndkkkku.  
+          `/pkkznnnnnnnnnnnnnnnnnnnnnnnnnnnnnXwkkk/  
+         IZkkkbnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn0kkbI 
+        ,wkkkpOnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmkkx 
+        ckkbUnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnzkkq.
+       lkkkXnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnpkkI
+       (kkOnnnnnnnnnnnnnnnnnnnnrrrxnnnnnnnnnnnnnnmkk<
+       ukkUnnnnnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnnmkk>
+       ckkYnnnnnnnnnnnnnnnnnnn\[[(nnnnnnnnnnnnnnndkk:
+       rkkCnnnnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnnYkkO 
+       ]kkqnnnnnnnnnnnnnnnnnn\[[(nnnnnnnnnnnnnnupkk/ 
+       `qkk0nnnnnnnnnnnnnnnnx}[[jnnnnnnnnnnnnnuwkkq" 
+        1kkkmXuuuuuuuuuuuuuu/[[(uuuuuuuuuuuucLdkkk-  
+        .nkkkkkkkkkkkkkkkkkd{[[[[}qkkkkkkkkkkkkkb{   
+         .\dkkkkkkkkkkkkkkkz[[[[[ukkkkkkkkkkkkkO<    
+           :\JZZZZZZZZZZZZO)}}[[}QZZZZZZZZZZQn_.     
+                             i[[i                    
+                            '][[`                    
+                            i[[i                     
+                           '][[[[[`                  
+                           i[[[[[i                   
+                          '][[[[[`                   
+                          .''i[[i                    
+                            '][[`                    
+                            i[[i                     
+                           '][[`                     
+                           i[[i                      
+                          '][[`                      
+                                                     

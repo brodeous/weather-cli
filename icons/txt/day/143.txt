@@ -1,0 +1,48 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\143.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\143.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\143.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\143.txt 
+Resolution: 44x41 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                     ':!>>>>>iI^            
+                   ';>>>>>>>>>>>!^          
+                  ^i>>>>>!Il!>>>>>;.        
+                 ">>>>I`.    ':i>>>I.       
+                `>>>i`         .I>>>;       
+               .i>>!.            :>>>^      
+               :>>i'              ;>>!.     
+          .^;Il>>>^               .i>>"     
+        .,i>>>>>>!                 ,>>l     
+       '!>>>>>>>>,                 .>>>.    
+      'i>>>i:^`^,'                  !>>`    
+     .l>>>,.                        I>>"    
+     ,>>>`                          ;>>,    
+    .i>>,                           I>>>I.  
+    ">>!                            I>>>>!' 
+   "!>>,                             ';>>>l.
+ .I>>>>`                               ">>>"
+.l>>>iI'                                :>>!
+,>>>:.                                  .i>>
+i>>:                                     ;>>
+>>i.                                     ,>>
+>>;                                      ,>>
+>>:                                      I>>
+>>I                                     '>>>
+>>>'                                    I>>l
+l>>l.                                 .;>>>^
+`>>>!"'.............................',!>>>; 
+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>;. 
+  ^i>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>i,   
+   .,I!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!I".    
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     
+     iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii     
+                                            

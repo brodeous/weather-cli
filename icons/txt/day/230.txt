@@ -1,0 +1,51 @@
+img2ascii -i C:\Users\meeke\code\weather-cli\icons\png\day\230.png -o C:\Users\meeke\code\weather-cli\icons\txt\day\230.txt 
+
+Input: C:\Users\meeke\code\weather-cli\icons\png\day\230.png 
+Output: C:\Users\meeke\code\weather-cli\icons\txt\day\230.txt 
+Resolution: 46x44 
+Characters (70): "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. " 
+
+                         ',;:^                
+                      "+)ttttt\]l.            
+                    ^?ttttttttttt);           
+                   I\tttt/){1|ttttt_.         
+                  !/ttt}>;::::l-\ttt].        
+                 ;/tt|i:::::::::I}ttt-        
+                '|tt)I::::::::::::?tttI       
+                +tt\I::::::::::::::[tt(.      
+           .I_[{/tt<:::::::::::::::;|tt!      
+         .<|tttttt):::::::::::::::::_tt}      
+        ^1tttttttt+:::::::::::::::::I/t/'     
+       ^|ttt(?>i>-l::::::::::::::::::)tt:     
+      .1tt/_;::::::::::::::::::::::::}ttl     
+      <tt/>::::::::::::::::::::::::::[tt~     
+     '\tt+:::::::::::::::::::::::::::}ttt]'   
+     ltt(;:::::::::::::::::::::::::::{tttt)`  
+    i(tt-:::::::::::::::::::::::::::::![ttt{. 
+  '}tttt>:::::::::::::::::::::::::::::::~/tti 
+ .}ttt\{I::::::::::::::::::::::::::::::::-tt( 
+ >ttt?;::::::::::::::::::::::::::::::::::;\tt,
+.|tt-:::::::::::::::::::::::::::::::::::::[tti
+:tt|;:::::::::::::::::::::::::::::::::::::-tt~
+itt[::::::::::::::::::::::::::::::::::::::-tt~
+>tt?::::::::::::::::::::::::::::::::::::::}tt!
+!tt{:::::::::::::::::::::::::::::::::::::I/tt^
+^tt/l::::::::::::::::::::::::::::::::::::}tt{ 
+ }tt);:::::::::::::::::::::::::::::::::;]ttt; 
+ ,/tt(~IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIl+(ttt_  
+  ittttttttttttttttttttttttttttttttttttttt?.  
+   l\ttttttttttttttttttttttttttttttttttt\i    
+    '>})((((((((((((((((((((((((((((()[i'     
+                                              
+                                              
+                                              
+       "!.'!^      "!.'!^                     
+      '>>:;>i.    '>>:;>i.    ;;;;;;;;;;;;;"  
+       :>>>>,      :>>>>,     >>>>>>>>>>>>>;  
+     ";;>>>>;;"  ";;>>>>;;"   IIIIIIIIIIIII"  
+     ;>>>>>>>>;  ;>>>>>>>>;                   
+     ,II>>>>I;"  ,II>>>>I;"   """""""""""     
+       ,>>>>"      ,>>>>"     >>>>>>>>>>>     
+      '>>;;>i.    '>>;;>i.    iiiiiiiiiii     
+      .,!.'i"     .,!.'i"                     
+                                              
