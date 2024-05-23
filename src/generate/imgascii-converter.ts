@@ -1,75 +1,82 @@
-import { exec } from "child_process";
 import fs from "fs";
-import path from "path";
+import Canvas from "canvas";
 import * as debug from "../logger.js";
 
+const MAX_HEIGHT = 40;
+const MAX_WIDTH = 40;
 
-const appDir = process.cwd();
-const iconDir = path.join(appDir, 'icons/png');
-const txtDir = path.join(appDir, 'icons/txt');
+const characters = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,'^`'.";
 
-fs.readdir(iconDir, function(err, folders) {
+const toGrayScale = (r:number, g:number, b:number) => 0.21*r + 0.72*g + 0.07*b;
 
-    if (err) {
-        debug.error(`error listing directory\n\t\\___ ${err}`);
-        return;
-    }
+const getCharacter = (grayscale: number) => characters[Math.ceil(((characters.length - 1) * grayscale) / 255)];
 
-    //debug.ok(`${folders}`);
+const convertToGrayScale = (context: any, width: number, height: number) => {
+    const imgData = context.getImageData(0, 0, width, height);
 
-    for (let idx = 0; idx < folders.length; idx++) {
+    const grayscales = [];
+    
+    for (let idx = 0; idx < imgData.data.length; idx+=4) {
         
-        let currentDir = path.join(iconDir, folders[idx]);
-        let outputDir = path.join(txtDir, folders[idx]);
+        // grab rgb values from image data
+        const r = imgData.data[idx];
+        const g = imgData.data[idx + 1];
+        const b = imgData.data[idx + 2];
 
-        fs.exists(outputDir, (exists) => {
-            if (!exists) {
-                debug.info(`creating directory ${outputDir}`);
-                fs.mkdir(outputDir, (err) => {
-                    if (err) {
-                        debug.error(`error making directory: ${outputDir}\t\n\\___ ${err.message}`)
-                        return;
-                    }
-                    debug.ok(`directory ${outputDir} created`);
-                });
-            }
-        })
+        const grayscale = toGrayScale(r, g, b);
 
-        fs.readdir(currentDir, function(err, files) {
+        imgData.data[idx], imgData.data[idx + 1], imgData.data[idx + 2] = grayscale;
 
-            if (err) {
-                debug.error(`error listing files in directory ${folders[idx]}\n\t\\___ ${err}`);
-                return;
-            }
-
-            //debug.ok(`${files}`);
-
-            for (let jdx = 0; jdx < files.length; jdx++) {
-                
-                const currentFile = path.join(currentDir, files[jdx]);
-
-                const file = files[jdx].substr(0, files[idx].length - 4).concat(`.txt`);
-                const outputFile = path.join(outputDir, file);
-                //debug.ok(currentFile);
-                //debug.info(outputFile);
-                
-                exec(`img2ascii -i ${currentFile} -o ${outputFile}`, (err, stdout, stderr) => {
-
-                    if (err) {
-                        debug.error(`error when running img2ascii\n\t\\___ ${err.message}`);
-                        return;
-                    }
-                    
-                    if (stderr) {
-                        debug.error(`error from img2ascii\n\t\\___ ${stderr}`);
-                        return;
-                    }
-
-                    debug.ok(`[img2ascii] ${stdout}`);
-
-                });
-            }
-        });
+        grayscales.push(grayscale);
     }
 
-});
+    context.putImageData(imgData, 0, 0);
+
+    return grayscales;
+};
+
+const drawAscii = (grayscales: number[], width: number) => {
+    const ascii = grayscales.reduce((asciiImg, grayscale, index) => {
+        let nextChar = getCharacter(grayscale);
+
+        if ((index + 1) % width === 0) {
+            nextChar += "\n";
+        }
+
+        return asciiImg + nextChar;
+    }, "");
+
+    return ascii;
+};
+
+const cropDimensions = (width: number, height: number) => {
+    if (width > MAX_WIDTH) {
+        const reducedHeight = Math.floor(height * MAX_WIDTH) / width;
+        return [MAX_WIDTH, reducedHeight];
+    }
+
+    if (height > MAX_HEIGHT) {
+        const reducedWidth = Math.floor(width * MAX_HEIGHT) / height;
+        return [reducedWidth, MAX_HEIGHT];
+    }
+
+    return [width, height];
+};
+
+export const convertToAscii = async (filename: string) => {
+    fs.readFile(filename, async function (err, data) {
+        if (err) throw err;
+
+        const img = await Canvas.loadImage(data);
+        const canvas = Canvas.createCanvas(img.width, img.height);
+        const ctx = canvas.getContext('2d');
+
+        const [width, height] = cropDimensions(img.width, img.height);
+
+        ctx.drawImage(img, 0, 0, width, height);
+
+        const grayscales = convertToGrayScale(ctx, width, height);
+
+        return drawAscii(grayscales, width);
+    });
+};
