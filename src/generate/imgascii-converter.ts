@@ -23,15 +23,11 @@ const convertToGrayScale = (context: any, width: number, height: number) => {
         const g = imgData.data[idx + 1];
         const b = imgData.data[idx + 2];
 
+        // convert rgb values to grayscale
         const grayscale = toGrayScale(r, g, b);
-
-        imgData.data[idx], imgData.data[idx + 1], imgData.data[idx + 2] = grayscale;
 
         grayscales.push(grayscale);
     }
-
-    context.putImageData(imgData, 0, 0);
-
     return grayscales;
 };
 
@@ -39,6 +35,7 @@ const drawAscii = (grayscales: number[], width: number) => {
     const ascii = grayscales.reduce((asciiImg, grayscale, index) => {
         let nextChar = getCharacter(grayscale);
 
+        // reached max width
         if ((index + 1) % width === 0) {
             nextChar += "\n";
         }
@@ -71,6 +68,7 @@ export const convertToAscii = async (filename: string) => {
         const canvas = Canvas.createCanvas(img.width, img.height);
         const ctx = canvas.getContext('2d');
 
+        // resize image
         const [width, height] = cropDimensions(img.width, img.height);
 
         ctx.drawImage(img, 0, 0, width, height);
