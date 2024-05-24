@@ -5,8 +5,8 @@ import * as debug from "../logger.js";
 import { rgbToAscii } from "./character.js";
 import { ANSI_ESCAPE_CLOSE, rgbToAnsi } from "./color.js";
 
-const MAX_HEIGHT = 40;
-const MAX_WIDTH = 40;
+const MAX_HEIGHT = 55;
+const MAX_WIDTH = 55;
 const fontRatio = 2.0;
 
 const getPixelData = (context: any, width: number, height: number) => {

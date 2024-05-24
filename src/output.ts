@@ -10,7 +10,7 @@ const output = async (geo: GeoData, wth: WthData, args: any) => {
 
     try {
         const ascii = await convertToAscii('http:' + wth.current.condition.icon);
-        console.log(`\n${ascii}\n`);
+        console.log(`${ascii}`);
     } catch (e) {
         console.log(e);
     }
