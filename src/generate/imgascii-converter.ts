@@ -67,11 +67,9 @@ const cropDimensions = (width: number, height: number) => {
     return [width, height];
 };
 
-export const convertToAscii = async (filename: string): Promise<string> => {
+export const convertToAscii = async (url: string): Promise<string> => {
     try {
-        const data = fs.readFileSync(filename);
-
-        const img = await Canvas.loadImage(data);
+        const img = await Canvas.loadImage(url);
         const canvas = Canvas.createCanvas(img.width, img.height);
         const ctx = canvas.getContext('2d');
 

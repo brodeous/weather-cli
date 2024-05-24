@@ -3,7 +3,7 @@ import path from 'path';
 import * as debug from '../logger.js';
 import { convertToAscii } from './imgascii-converter.js';
 
-const generate = async () => {
+export const generate = async () => {
 
     const wd = process.cwd();
     const input = path.join(wd, 'icons', 'png');
@@ -51,6 +51,3 @@ const generate = async () => {
         }
     });
 }
-
-generate();
-

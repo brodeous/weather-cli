@@ -1,11 +1,19 @@
 import chalk from 'chalk';
 import {GeoData, WthData } from './datafetch.js';
 import getTime from './timefetch.js';
+import { convertToAscii } from './generate/imgascii-converter.js';
 
 const h = 15;
 const w = 50;
 
-const output = (geo: GeoData, wth: WthData, args: any) => {
+const output = async (geo: GeoData, wth: WthData, args: any) => {
+
+    try {
+        const ascii = await convertToAscii('http:' + wth.current.condition.icon);
+        console.log(`\n${ascii}\n`);
+    } catch (e) {
+        console.log(e);
+    }
 
     if( args.extended )
         printExpand(geo, wth);
@@ -15,7 +23,7 @@ const printExpand = (geo: GeoData, wth: WthData) => {
 
     // print header
     console.log(`\n Weather Data`.padEnd(w/2), chalk.cyan(`Time: [${getTime()}]`.padStart(w/2)));
-    console.log(` `.padEnd(w, `-`));
+    console.log(chalk.gray(` `.padEnd(w, `-`)));
 
     console.log(`> City`.padEnd(w/2), `${geo.city}`.padStart(w/2));
     console.log(`> State/Province`.padEnd(w/2), `${geo.state_prov}`.padStart(w/2));

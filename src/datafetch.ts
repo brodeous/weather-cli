@@ -10,16 +10,17 @@ export type GeoData = {
 
 export type WthData = {
     current: {
-        temp_f: number
+        temp_f: number,
         condition: {
-            text: string
+            text: string,
+            icon: string,
         }
         humidity: number,
         feelslike_f: number
     }
 }
 
-const fetchGeoData = async () => {
+export const fetchGeoData = async () => {
     
         const res = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.GEO_API_KEY}&fields=geo`);
         const data = await res.json() as GeoData;
@@ -27,15 +28,10 @@ const fetchGeoData = async () => {
         return data;
 }
 
-const fetchWthData = async (city: string) => {
+export const fetchWthData = async (city: string) => {
 
     const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${city}`);
     const data = await res.json() as WthData;
 
     return data;
-}
-
-export {
-    fetchGeoData,
-    fetchWthData,
 }
