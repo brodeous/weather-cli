@@ -36,7 +36,7 @@ const generate = async () => {
 
                     const filePath = path.join(folderPath, files[j]);
                     const ascii = await convertToAscii(filePath);
-                    debug.info(`[generator] ${ascii}`);
+                    //debug.info(`[generator] ${ascii}`);
 
                     fs.appendFileSync(output, `// ${name} is generated from ${files[j]}\n`);
                     fs.appendFileSync(output, `\t${name} : \`\n${ascii}\`,`);
@@ -44,7 +44,7 @@ const generate = async () => {
                     fs.appendFileSync(output, `\n`);
                 }
 
-                fs.appendFileSync(output, `}\n\nexport default ${folder}`);
+                fs.appendFileSync(output, `}\n\nexport default ${folder}\n`);
 
                 debug.ok(`finished generating ${folder} icons`);
             });

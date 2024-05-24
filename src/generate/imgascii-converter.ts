@@ -1,41 +1,43 @@
 import fs from "fs";
 import Canvas from "canvas";
+import { RGBA, Pixel } from "./lib.js";
 import * as debug from "../logger.js";
+import { rgbToAscii } from "./character.js";
+import { ANSI_ESCAPE_CLOSE, rgbToAnsi } from "./color.js";
 
 const MAX_HEIGHT = 40;
 const MAX_WIDTH = 40;
 const fontRatio = 2.0;
 
-const characters = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,'^`'. ";
-const reverse_characters = characters.split("").reverse().join("");
-
-const toGrayScale = (r:number, g:number, b:number) => 0.21*r + 0.72*g + 0.07*b;
-
-const getCharacter = (grayscale: number) => reverse_characters[Math.ceil(((characters.length - 1) * grayscale) / 255)];
-
-const convertToGrayScale = (context: any, width: number, height: number) => {
+const getPixelData = (context: any, width: number, height: number) => {
     const imgData = context.getImageData(0, 0, width, height);
 
-    const grayscales = [];
+    const pixels = [];
     
     for (let idx = 0; idx < imgData.data.length; idx+=4) {
         
         // grab rgb values from image data
-        const r = imgData.data[idx];
-        const g = imgData.data[idx + 1];
-        const b = imgData.data[idx + 2];
+        const r = imgData.data[idx];        // red
+        const g = imgData.data[idx + 1];    // green
+        const b = imgData.data[idx + 2];    // blue
+        const a = imgData.data[idx + 3];    // alpha
 
         // convert rgb values to grayscale
-        const grayscale = toGrayScale(r, g, b);
+        const pixel = new Pixel({ r, g, b, a});
+        if (a < 120) {
+            pixel.setTransparent(true);
+        }
+        rgbToAscii(pixel);
+        rgbToAnsi(pixel);
 
-        grayscales.push(grayscale);
+        pixels.push(pixel);
     }
-    return grayscales;
+    return pixels;
 };
 
-const drawAscii = (grayscales: number[], width: number) => {
-    const ascii = grayscales.reduce((asciiImg, grayscale, index) => {
-        let nextChar = getCharacter(grayscale);
+const drawAscii = (pixels: Pixel[], width: number) => {
+    let ascii = pixels.reduce((asciiImg, pixel, index) => {
+        let nextChar = pixel.getANSI() + pixel.getChar();
 
         // reached max width
         if ((index + 1) % width === 0) {
@@ -44,7 +46,8 @@ const drawAscii = (grayscales: number[], width: number) => {
 
         return asciiImg + nextChar;
     }, "");
-
+    // add ansi close
+    ascii += ANSI_ESCAPE_CLOSE;
     return ascii;
 };
 
@@ -77,9 +80,9 @@ export const convertToAscii = async (filename: string): Promise<string> => {
 
         ctx.drawImage(img, 0, 0, width, height);
 
-        const grayscales = convertToGrayScale(ctx, width, height);
+        const pixels = getPixelData(ctx, width, height);
 
-        const ascii = drawAscii(grayscales, width);
+        const ascii = drawAscii(pixels, width);
 
         return ascii;
     } catch (e) {
