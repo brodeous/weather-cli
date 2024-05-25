@@ -41,7 +41,7 @@ const drawAscii = (pixels: Pixel[], width: number) => {
 
         // reached max width
         if ((index + 1) % width === 0) {
-            nextChar += "\n";
+            nextChar += ANSI_ESCAPE_CLOSE + "\n";
         }
 
         return asciiImg + nextChar;

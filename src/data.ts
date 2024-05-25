@@ -9,7 +9,7 @@ const organizeData = async (geo: GeoData, wth: WthData): Promise<string> => {
 
     let data = "";
     // print header
-    data += ` Weather Data`.padEnd(w/2) + chalk.cyan(`Time: [${getTime()}]\n`.padStart(w/2));
+    data += chalk.bold(`  Weather Data`.padEnd(w/2) + chalk.cyan(`Time: [${getTime()}]\n`.padStart(w/2)));
     data += chalk.gray(` `.padEnd(w, `-`)) + '\n';
 
     data += `> City`.padEnd(w/2) + `${geo.city}\n`.padStart(w/2);
