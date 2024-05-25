@@ -2,7 +2,9 @@
 import "dotenv/config";
 import { fetchGeoData, fetchWthData } from "./datafetch.js";
 import * as debug from "./logger.js";
-import output from "./output.js";
+import organizeData from "./data.js";
+import { convertToAscii } from "./generate/imgascii-converter.js";
+import display from "./display.js";
 
 
 
@@ -14,8 +16,10 @@ const run = async () => {
 
         const weatherData = await fetchWthData(userData.city);
         //debug.info(`weather data recieved\n\t\\___ temp: ${weatherData.current.temp_f}\n\t\\___ condition: ${weatherData.current.condition.text}\n\t\\___ humidity: ${weatherData.current.humidity}\n\t\\___ feels like: ${weatherData.current.feelslike_f}`);
+        const ascii = await convertToAscii('http:' + weatherData.current.condition.icon);
+        const data = await organizeData(userData, weatherData);
         
-        output(userData, weatherData, {extended: true});
+        display(ascii, data);
 
     } catch (e) {
         debug.error(e as string);
