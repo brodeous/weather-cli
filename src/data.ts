@@ -5,21 +5,22 @@ import getTime from './timefetch.js';
 const h = 15;
 const w = 50;
 
-const organizeData = async (geo: GeoData, wth: WthData): Promise<string> => {
+const organizeData = async (data: WthData): Promise<string> => {
 
-    let data = "";
+    let out = "";
     // print header
-    data += chalk.bold(`  Weather Data`.padEnd(w/2) + chalk.cyan(`Time: [${getTime()}]\n`.padStart(w/2)));
-    data += chalk.gray(` `.padEnd(w, `-`)) + '\n';
+	out += chalk.bold(`  Weather Data`.padEnd(w/2) + chalk.cyan(`Time: [${getTime()}]\n`.padStart(w/2)));
+	out += chalk.gray(` `.padEnd(w, `-`)) + '\n';
 
-    data += `> City`.padEnd(w/2) + `${geo.city}\n`.padStart(w/2);
-    data += `> State/Province`.padEnd(w/2) + `${geo.state_prov}\n`.padStart(w/2);
-    data += `> Condition`.padEnd(w/2) + `${wth.current.condition.text}\n`.padStart(w/2);
-    data += `> Current Temp`.padEnd(w/2) + `${wth.current.temp_f}^F\n`.padStart(w/2);
-    data += `> Humidity`.padEnd(w/2) + `${wth.current.humidity}%\n`.padStart(w/2);
-    data += `> Feels Like`.padEnd(w/2) + `${wth.current.feelslike_f}^F\n`.padStart(w/2);
+	out += `> City`.padEnd(w/2) + `${data.location.name}\n`.padStart(w/2);
+	out += `> State/Province`.padEnd(w/2) + `${data.location.region}\n`.padStart(w/2);
+	out += `> Country`.padEnd(w/2) + `${data.location.country}\n`.padStart(w/2);
+	out += `> Condition`.padEnd(w/2) + `${data.current.condition.text}\n`.padStart(w/2);
+	out += `> Current Temp`.padEnd(w/2) + `${data.current.temp_f}^F\n`.padStart(w/2);
+	out += `> Humidity`.padEnd(w/2) + `${data.current.humidity}%\n`.padStart(w/2);
+	out += `> Feels Like`.padEnd(w/2) + `${data.current.feelslike_f}^F\n`.padStart(w/2);
 
-    return data;
+    return out;
 }
 
 export default organizeData;

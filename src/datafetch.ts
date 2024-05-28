@@ -1,14 +1,21 @@
 import "dotenv/config"
 
 export type GeoData = {
+    ip: string,
     city: string,
     state_prov: string,
     country_code2: string,
     latitude: string,
-    longitude: string
+    longitude: string,
+    zip: string
 }
 
 export type WthData = {
+    location: {
+        name: string,
+        region: string,
+        country: string,
+    },
     current: {
         temp_f: number,
         condition: {
@@ -28,9 +35,18 @@ export const fetchGeoData = async () => {
         return data;
 }
 
-export const fetchWthData = async (city: string) => {
+export const fetchWthData = async (geo: GeoData) => {
+    let param = "";
 
-    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${city}`);
+    if (geo.city !== "") {
+        param = geo.city;
+    } else if (geo.zip !== "") {
+        param = geo.zip;
+    } else {
+        param = geo.latitude + ',' + geo.longitude;
+    }
+
+    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${param}`);
     const data = await res.json() as WthData;
 
     return data;
