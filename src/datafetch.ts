@@ -42,8 +42,10 @@ export const fetchWthData = async (geo: GeoData) => {
         param = geo.city;
     } else if (geo.zip !== "") {
         param = geo.zip;
-    } else {
+    } else if (geo.latitude !== "") {
         param = geo.latitude + ',' + geo.longitude;
+    } else {
+        param = geo.ip;
     }
 
     const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${param}`);
