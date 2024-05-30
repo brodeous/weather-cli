@@ -5,7 +5,7 @@ import getTime from './timefetch.js';
 const h = 15;
 const w = 50;
 
-const organizeData = async (data: WthData): Promise<string> => {
+export const organizeData = async (data: WthData): Promise<string> => {
 
     let out = "";
     // print header
@@ -22,5 +22,3 @@ const organizeData = async (data: WthData): Promise<string> => {
 
     return out;
 }
-
-export default organizeData;

@@ -12,7 +12,7 @@ const footer = () => {
     return data;
 }
 
-const display = (a: string, d: string) => {
+export const display = (a: string, d: string) => {
     const ascii = a.split('\n');
     const data = d.split('\n');
     const foot = footer().split('\n');
@@ -31,5 +31,3 @@ const display = (a: string, d: string) => {
         console.log(output);
     }
 }
-
-export default display;

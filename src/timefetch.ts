@@ -1,9 +1,18 @@
 const getTime = () => {
     const currentTime = new Date();
-    const currentHour = currentTime.getHours() < 10 ? `${0}${currentTime.getHours()}` : `${currentTime.getHours()}`;
+
+    let hour = 0;
+    let status = '';
+    if (currentTime.getHours() > 12) {
+        hour =  currentTime.getHours() - 12;
+        status = 'PM';
+    } else {
+        currentTime.getHours();
+        status = 'AM';
+    }
+    const currentHour = hour < 10 ? `${0}${hour}` : `${hour}`;
     const currentMinute = currentTime.getMinutes() < 10 ? `${0}${currentTime.getMinutes()}` : `${currentTime.getMinutes()}`;
-    const status = parseInt(currentHour) < 12 ? 'AM' : 'PM';
-    const time = `${currentHour}:${currentMinute}:${status}`;
+    const time = `${currentHour}:${currentMinute} ${status}`;
 
     return time;
 }

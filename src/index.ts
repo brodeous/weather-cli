@@ -2,9 +2,9 @@
 import "dotenv/config";
 import { GeoData, fetchGeoData, fetchWthData } from "./datafetch.js";
 import * as debug from "./logger.js";
-import organizeData from "./data.js";
+import { organizeData } from "./data.js";
 import { convertToAscii } from "./generate/imgascii-converter.js";
-import display from "./display.js";
+import { display } from "./display.js";
 
 
 
