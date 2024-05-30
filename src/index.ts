@@ -7,7 +7,7 @@ import { organizeData } from "./data.js";
 import { convertToAscii } from "./generate/imgascii-converter.js";
 import { display } from "./display.js";
 
-const program = new Command();
+export const program = new Command();
 
 program
     .name("GetWet")
