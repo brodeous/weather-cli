@@ -11,11 +11,25 @@ const program = new Command();
 
 program
     .name("GetWet")
-    .description("A CLI that retrieves current weather data for a specific location.")
+    .description(`A CLI that retrieves current weather data for a specific location.
+    > No option will return data based on current public ip.`)
     .version("0.1.0")
+    .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")
     .option("-l, --lat_long <lat,long>", "specific latitude and longitude")
+    .addHelpText("after",`
+
+Example:
+    --city
+        $ getWet -c Dallas
+        $ getWet -c 'San Diego'
+        $ getWet -c San_Diego
+    --zipcode
+        $ getWet -z 77007
+    --lat_long
+        $ getWet -l 39.76893679731222,-86.1639944813316
+`)
 
 program.parse(process.argv);
 
@@ -35,8 +49,6 @@ const run = async () => {
             longitude: opts.lat_long ? opts.lat_long.split(',')[1] : "",
             zip: opts.zipcode ? opts.zipcode : "",
         };
-
-        console.log(userData);
 
         const weatherData = await fetchWthData(userData);
         const ascii = await convertToAscii('http:' + weatherData.current.condition.icon);
