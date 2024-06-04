@@ -2,6 +2,8 @@
 
 A CLI designed to retrieve weather data at a given location. This CLI uses the node runtime and will need to be installed prior to the installation of this application.
 
+![terminal](pics/terminal.png)
+
 ## Quick Set Up
 
 ### Installation

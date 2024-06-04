@@ -34,6 +34,9 @@ class Config {
 
     #readFile = async () => {
         try {
+            if (!fs.existsSync(`${process.cwd()}/config.json`)) {
+                await this.#saveFile();
+            }
             const res = fs.readFileSync(`${process.cwd()}/config.json`);
             const data = JSON.parse(res.toString());
 
