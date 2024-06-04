@@ -34,10 +34,10 @@ class Config {
 
     #readFile = async () => {
         try {
-            if (!fs.existsSync(`${process.cwd()}/config.json`)) {
+            if (!fs.existsSync(`${__dirname}/config.json`)) {
                 await this.#saveFile();
             }
-            const res = fs.readFileSync(`${process.cwd()}/config.json`);
+            const res = fs.readFileSync(`${__dirname}/config.json`);
             const data = JSON.parse(res.toString());
 
             this.ip_geo_api = data.ip_geo_api;
@@ -54,7 +54,7 @@ class Config {
         }
 
         try {
-            fs.writeFileSync(`${process.cwd()}/config.json`, JSON.stringify(file, null, 2));
+            fs.writeFileSync(`${__dirname}/config.json`, JSON.stringify(file, null, 2));
         } catch (e) {
             throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue saving to config.json. Try again.`);
         }
