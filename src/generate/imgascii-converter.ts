@@ -84,6 +84,6 @@ export const convertToAscii = async (url: string): Promise<string> => {
 
         return ascii;
     } catch (e) {
-        throw e;
+        throw new Error(`[\x1b[33mASCII\x1b[0m] Issue loading image. Try again`);
     }
 };
