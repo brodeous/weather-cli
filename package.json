@@ -1,6 +1,6 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "@brodeous/weather-cli",
+  "version": "1.0.1",
   "description": "CLI tool that grabs weather forcast data for given location.",
   "main": "src/index.ts",
   "bin": {
@@ -12,9 +12,19 @@
     "dev": "concurrently \"nodemon ./build/index.js\" \"tsc -w \""
   },
   "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "build",
+    "pics",
+    "config.json"
+  ],
+  "git repository": "https://github.com/brodeous/weather-cli.git",
+  "keywords": [
+    "weather",
+    "cli",
+    "forecast"
+  ],
+  "author": "@brodeous",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.27",
     "concurrently": "^8.2.2",
