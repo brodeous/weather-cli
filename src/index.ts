@@ -71,7 +71,7 @@ const run = async () => {
 
         const weatherData = await fetchWthData(userData);
         const ascii = await convertToAscii('http:' + weatherData.current.condition.icon);
-        const data = await organizeData(geo, weatherData);
+        const data = await organizeData(weatherData);
         
         display(ascii, data);
 
