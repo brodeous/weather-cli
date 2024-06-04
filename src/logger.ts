@@ -25,12 +25,10 @@ const error = (msg: string) => {
 }
 
 const printLog = (log: string) => {
-    fs.appendFile("logs", `[${chalk.cyan(getTime())}] ${log}\n`, (error) => {
-        if (error) throw error;
-    });
-
-    if (config.isDev)
-        console.log(log);
+//    fs.appendFile("logs", `[${chalk.cyan(getTime())}] ${log}\n`, (error) => {
+//        if (error) throw error;
+//    });
+    console.log(log);
 }
 
 export {
