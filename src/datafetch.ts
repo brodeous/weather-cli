@@ -1,4 +1,5 @@
 import "dotenv/config"
+import { config } from "./index.js"
 
 export type GeoData = {
     ip: string,
@@ -29,7 +30,7 @@ export type WthData = {
 
 export const fetchGeoData = async () => {
     
-        const res = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.GEO_API_KEY}&fields=geo`);
+        const res = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${config.ip_geo_api}&fields=geo`);
         const data = await res.json() as GeoData;
 
         return data;
@@ -46,7 +47,7 @@ export const fetchWthData = async (geo: GeoData) => {
         param = geo.city; // be given by either user or geo api
     }
 
-    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.WTH_API_KEY}&q=${param}`);
+    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${config.weather_api}&q=${param}`);
     const data = await res.json() as WthData;
 
     return data;
