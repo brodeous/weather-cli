@@ -7,7 +7,7 @@ const footer = () => {
     let data = "";
 
     data += ` ` + chalk.bold(chalk.gray(`$ getwet\n`.padStart(w)));
-    data += ` ` + chalk.gray(`@NMeekGit\n`.padStart(w));
+    data += ` ` + chalk.gray(`@brodeous\n`.padStart(w));
     data += ` ` + chalk.gray(`MIT License\n`.padStart(w));
     return data;
 }
