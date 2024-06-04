@@ -30,20 +30,21 @@ You will need to go to these two websites and create an account
 - [weatherapi.com](https://www.weatherapi.com/)
 
 Once the accounts are made, you need to grab the keys
-*IP Geolocation*\n
-[]("./pics/IP Geolocation API - DashBoard.png")
 
-*Weather API*\n
-[]("./pics/Dashboard - WeatherAPI.com.png")
+##### IP Geolocation
+![geolocation]("./pics/IP Geolocation API - DashBoard.png")
+
+##### Weather API
+![weatherapi]("./pics/Dashboard - WeatherAPI.com.png")
 
 To then add these keys to the CLI, you will want to run these commands
-*IP Geolocation*
-```
+##### IP Geolocation
+```console
 $ getwet --set-key geolocation <api key>
 
 [\x1b[33mCONFIG\x1b[0m] ip_geo_api set
 ```
-*Weather API*
+##### Weather API
 ```
 $ getwet --set-key weatherapi <api key>
 
