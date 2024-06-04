@@ -40,13 +40,13 @@ Once the accounts are made, you need to grab the keys
 To then add these keys to the CLI, you will want to run these commands
 ##### IP Geolocation
 ```console
-$ getwet --set-key geolocation <api key>
+$ getwet --set-key geolocation=<api key>
 
 [CONFIG] ip_geo_api set
 ```
 ##### Weather API
 ```console
-$ getwet --set-key weatherapi <api key>
+$ getwet --set-key weatherapi=<api key>
 
 [CONFIG] weather_api set
 ```
@@ -63,5 +63,34 @@ Weather API > <weather key>
 
 ## Usage
 The CLI comes with a few options to retrieve the weather information for specific places.
-```
+```console
+$ getwet -h
+Usage: GetWet [options] args
+
+A CLI that retrieves current weather data for a specific location.
+    > No option will return data based on current public ip.
+
+Options:
+  -V, --version               output the version number
+  -c, --city <city>           specific city
+  -z, --zipcode <zipcode>     specific zipcode
+  -l, --lat_long <lat,long>   specific latitude and longitude
+  -s, --set_key <name>=<key>  set api key
+  -ls, --list_keys            list api keys
+  -h, --help                  display help for command
+
+
+Example:
+    --city
+        $ getwet -c Dallas
+        $ getwet -c 'San Diego'
+        $ getwet -c San_Diego
+    --zipcode
+        $ getwet -z 77007
+    --lat_long
+        $ getwet -l 39.76893679731222,-86.1639944813316
+    --set-key
+        $ getwet -s geolocation=<api key>
+        $ getwet -s weatherapi=<api key>
+
 ```

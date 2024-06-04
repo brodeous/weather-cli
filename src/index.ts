@@ -20,8 +20,8 @@ program
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")
     .option("-l, --lat_long <lat,long>", "specific latitude and longitude")
-    .option("--list_keys", "list api keys")
     .option("-s, --set_key <name>=<key>", "set api key")
+    .option("-ls, --list_keys", "list api keys")
     .showHelpAfterError("(run -h, --help for additional information)")
     .addHelpText("after",`
 
