@@ -15,7 +15,7 @@ $ npm i -g @brodeous/weather-cli
 Next you need to edit the config and add your api keys for the application to retrieve it's data.
 
 If you run the following command, you can see there are no api keys saved.
-```
+```console
 $ getwet --list-keys
 
 [API KEYS]
@@ -32,27 +32,27 @@ You will need to go to these two websites and create an account
 Once the accounts are made, you need to grab the keys
 
 ##### IP Geolocation
-![geolocation]("./pics/IP Geolocation API - DashBoard.png")
+![geolocation](./pics/IP Geolocation API - DashBoard.png)
 
 ##### Weather API
-![weatherapi]("./pics/Dashboard - WeatherAPI.com.png")
+![weatherapi](./pics/Dashboard - WeatherAPI.com.png)
 
 To then add these keys to the CLI, you will want to run these commands
 ##### IP Geolocation
 ```console
 $ getwet --set-key geolocation <api key>
 
-[\x1b[33mCONFIG\x1b[0m] ip_geo_api set
+[CONFIG] ip_geo_api set
 ```
 ##### Weather API
-```
+```console
 $ getwet --set-key weatherapi <api key>
 
 [CONFIG] weather_api set
 ```
 
 If you run the list command again, you should now see the keys you just set.
-```
+```console
 $ getwet --list-keys
 
 [API KEYS]
