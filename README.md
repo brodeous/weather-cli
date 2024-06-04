@@ -32,10 +32,10 @@ You will need to go to these two websites and create an account
 Once the accounts are made, you need to grab the keys
 
 ##### IP Geolocation
-![geolocation](./pics/IP Geolocation API - DashBoard.png)
+![geolocation](pics/IPGeolocationAPI-DashBoard.png)
 
 ##### Weather API
-![weatherapi](./pics/Dashboard - WeatherAPI.com.png)
+![weatherapi](pics/Dashboard-WeatherAPI.com.png)
 
 To then add these keys to the CLI, you will want to run these commands
 ##### IP Geolocation
