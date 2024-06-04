@@ -26,14 +26,14 @@ Weather API >
 \*\* For full functionality, you will need both keys. If you do not want the ability to use your current location, we will only need the weather_api key.
 
 You will need to go to these two websites and create an account
--> [ipgeolocation.io](https://ipgeolocation.io/)
--> [weatherapi.com](https://www.weatherapi.com/)
+- [ipgeolocation.io](https://ipgeolocation.io/)
+- [weatherapi.com](https://www.weatherapi.com/)
 
 Once the accounts are made, you need to grab the keys
-*IP Geolocation*
+*IP Geolocation*\n
 []("./pics/IP Geolocation API - DashBoard.png")
 
-*Weather API*
+*Weather API*\n
 []("./pics/Dashboard - WeatherAPI.com.png")
 
 To then add these keys to the CLI, you will want to run these commands
@@ -41,7 +41,7 @@ To then add these keys to the CLI, you will want to run these commands
 ```
 $ getwet --set-key geolocation <api key>
 
-[CONFIG] ip_geo_api set
+[\x1b[33mCONFIG\x1b[0m] ip_geo_api set
 ```
 *Weather API*
 ```
