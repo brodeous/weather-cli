@@ -15,7 +15,7 @@ program
     .name("GetWet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
-    .version("1.0.7")
+    .version("1.0.8")
     .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")
@@ -23,6 +23,7 @@ program
     .option("-s, --set_key <name>=<key>", "set api key")
     .option("-ls, --list_keys", "list api keys")
     .option("-u, --uninstall", "uninstall getwet")
+    .option("--config_init", "initialize config file")
     .showHelpAfterError("(run -h, --help for additional information)")
     .addHelpText("after",`
 
@@ -51,7 +52,10 @@ const run = async () => {
             return;
         }
 
-        await config.init();
+        if (opts.config_init) {
+            await config.init();
+            return;
+        }
 
         if (opts.list_keys) {
             config.list();

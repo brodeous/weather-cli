@@ -15,7 +15,7 @@ class Config {
     }
 
     init = async () => {
-        await this.#readFile();
+        await this.#createFile();
     }
 
     setAPI = async (key: string, val:string) => {
@@ -38,8 +38,13 @@ class Config {
     }
 
     #createFile = async () => {
-        fs.mkdirSync(_dirname);
-        await this.#saveFile();
+        if (!fs.existsSync(path.join(_dirname, 'getwet.conf'))) {
+            fs.mkdirSync(_dirname);
+            await this.#saveFile();
+            console.log(`[\x1b[33mCONFIG\x1b[0m] initialized\n\t\\___ location: \x1b[32m${_dirname}/getwet.conf\x1b[0m`);
+        } else {
+            throw new Error(`[\x1b[33mCONFIG\x1b[0m] file already exists\n\t\\___ location: \x1b[32m${_dirname}/getwet.conf\x1b[0m`);
+        }
     }
 
     #readFile = async () => {
@@ -54,7 +59,7 @@ class Config {
             this.ip_geo_api = data.ip_geo_api;
             this.weather_api = data.weather_api;
         } catch (e) {
-            throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue reading/writing config file. Try again or make sure there is a config.json file.\n${e}`);
+            throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue reading/writing config file. Try again or make sure there is a getwet.conf file with --config_init.\n${e}`);
         }
     }
 
