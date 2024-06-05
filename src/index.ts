@@ -15,7 +15,7 @@ program
     .name("GetWet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
-    .version("1.0.2")
+    .version("1.0.3")
     .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")

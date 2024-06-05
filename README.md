@@ -2,7 +2,7 @@
 
 A CLI designed to retrieve weather data at a given location. This CLI uses the node runtime and will need to be installed prior to the installation of this application.
 
-![terminal](./pics/terminal.png)
+![terminal](https://https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/terminal.png)
 
 ## Quick Set Up
 
@@ -34,10 +34,10 @@ You will need to go to these two websites and create an account
 Once the accounts are made, you need to grab the keys
 
 ##### IP Geolocation
-![geolocation](./pics/IPGeolocationAPI-DashBoard.png)
+![geolocation](https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/IPGeolocationAPI-DashBoard.png)
 
 ##### Weather API
-![weatherapi](./pics/Dashboard-WeatherAPI.com.png)
+![weatherapi](https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/Dashboard-WeatherAPI.com.png)
 
 To then add these keys to the CLI, you will want to run these commands
 ##### IP Geolocation
