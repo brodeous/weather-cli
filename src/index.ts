@@ -11,59 +11,11 @@ import { uninstall } from "./uninstaller.js";
 export const config = new Config();
 export const program = new Command();
 
-program
-    .name("GetWet")
-    .description(`A CLI that retrieves current weather data for a specific location.
-    > No option will return data based on current public ip.`)
-    .version("1.0.8")
-    .usage("[options] args")
-    .option("-c, --city <city>", "specific city")
-    .option("-z, --zipcode <zipcode>", "specific zipcode")
-    .option("-l, --lat_long <lat,long>", "specific latitude and longitude")
-    .option("-s, --set_key <name>=<key>", "set api key")
-    .option("-ls, --list_keys", "list api keys")
-    .option("-u, --uninstall", "uninstall getwet")
-    .option("--config_init", "initialize config file")
-    .showHelpAfterError("(run -h, --help for additional information)")
-    .addHelpText("after",`
-
-Example:
-    --city
-        $ getwet -c Dallas
-        $ getwet -c 'San Diego'
-        $ getwet -c San_Diego
-    --zipcode
-        $ getwet -z 77007
-    --lat_long
-        $ getwet -l 39.76893679731222,-86.1639944813316
-    --set-key
-        $ getwet -s geolocation=<api key>
-        $ getwet -s weatherapi=<api key>
-`)
-
-program.parse(process.argv);
-
-const run = async () => {
+const main = async (opts: any) => {
     try {
-        const opts = program.opts();
 
         if (opts.uninstall) {
             uninstall();
-            return;
-        }
-
-        if (opts.config_init) {
-            await config.init();
-            return;
-        }
-
-        if (opts.list_keys) {
-            config.list();
-            return;
-        }
-
-        if (opts.set_key) {
-            await config.setAPI(opts.set_key.split('=')[0], opts.set_key.split('=')[1]);
             return;
         }
 
@@ -87,8 +39,68 @@ const run = async () => {
 
     } catch (e) {
         debug.error(e as string);
+        process.exit(1);
     }
 
 }
 
-run();
+const conf = async (options: any) => {
+        try {
+            if (options.init)
+                await config.init();
+            if (options.edit)
+                await config.edit();
+            if (options.remove)
+                await config.remove();
+            if (options.print)
+                config.print();
+
+            process.exit(0);
+        } catch (e) {
+            debug.error(e as string);
+            process.exit(1);
+        }
+}
+
+program
+    .name("GetWet")
+    .description(`A CLI that retrieves current weather data for a specific location.
+    > No option will return data based on current public ip.`)
+    .version("1.0.8")
+    .usage("[options] args")
+    .option("-c, --city <city>", "specific city")
+    .option("-z, --zipcode <zipcode>", "specific zipcode")
+    .option("-l, --lat_long <lat,long>", "specific latitude and longitude")
+    .option("-u, --uninstall", "uninstall getwet")
+    .action( async (options) => {
+        await main(options);
+    })
+    .showHelpAfterError("(run -h, --help for additional information)")
+    .addHelpText("after",`
+
+Example:
+    --city
+        $ getwet -c Dallas
+        $ getwet -c 'San Diego'
+        $ getwet -c San_Diego
+    --zipcode
+        $ getwet -z 77007
+    --lat_long
+        $ getwet -l 39.76893679731222,-86.1639944813316
+    --set-key
+        $ getwet -s geolocation=<api key>
+        $ getwet -s weatherapi=<api key>`)
+
+program
+    .command("config")
+    .description("init/edit/rm/list config file")
+    .option("-i, --init", "initialize config file")
+    .option("-e, --edit", "edit config file")
+    .option("-rm, --remove", "remove config file")
+    .option("-p, --print", "print config")
+    .action( async (options) => {
+        await conf(options);
+    })
+    .showHelpAfterError("(run -h, --help for additional information)")
+
+program.parse(process.argv);
