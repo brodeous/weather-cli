@@ -2,7 +2,7 @@
 
 A CLI designed to retrieve weather data at a given location. This CLI uses the node runtime and will need to be installed prior to the installation of this application.
 
-![terminal](https://https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/terminal.png)
+![terminal](https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/terminal.png)
 
 ## Quick Set Up
 
