@@ -1,8 +1,4 @@
 import chalk from 'chalk';
-import fs from 'fs';
-import config from './config.js';
-import getTime from './timefetch.js'
-
 
 const info = (msg: string) => {
     const text = chalk.white(`[i] ${msg}`);

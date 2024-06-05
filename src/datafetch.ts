@@ -1,4 +1,3 @@
-import "dotenv/config"
 import { config } from "./index.js"
 
 export type GeoData = {

@@ -1,7 +1,5 @@
-import fs from "fs";
 import Canvas from "canvas";
-import { RGBA, Pixel } from "./lib.js";
-import * as debug from "../logger.js";
+import { Pixel } from "./lib.js";
 import { rgbToAscii } from "./character.js";
 import { ANSI_ESCAPE_CLOSE, rgbToAnsi } from "./color.js";
 

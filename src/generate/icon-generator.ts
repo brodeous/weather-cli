@@ -1,4 +1,4 @@
-import fs, { appendFileSync } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import * as debug from '../logger.js';
 import { convertToAscii } from './imgascii-converter.js';
