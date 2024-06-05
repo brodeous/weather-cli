@@ -23,11 +23,11 @@ const main = async (opts: any) => {
 
         // Check for API keys
         if (config.ip_geo_api === "") {
-            debug.warn(`[\x1b[33mCONFIG\x1b0m] API Key for ipgeolocation.io is missing. Required for \"$ getwet <no_args>\"`);
+            debug.warn(`[\x1b[33mCONFIG\x1b[0m] API Key for ipgeolocation.io is missing. Required for \"$ getwet <no_args>\"`);
         }
 
         if (config.weather_api === "") {
-            throw new Error(`[\x1b[33mCONFIG\x1b0m] API key for weatherapi.com is missing. Check README.md for configuration`);
+            throw new Error(`[\x1b[33mCONFIG\x1b[0m] API key for weatherapi.com is missing. Check README.md for configuration`);
         }
 
         const geo = await fetchGeoData();

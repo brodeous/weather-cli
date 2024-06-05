@@ -9,12 +9,12 @@ const ok = (msg: string) => {
 }
 
 const warn = (msg: string) => {
-    const text = `\x1b[33m[w] ${msg}\x1b[0m`;
+    const text = `\x1b[33m[w]\x1b[0m Warn : ` + `${msg}`;
     printLog(text);
 }
 
 const error = (msg: string) => {
-    const text = `\x1b[31m[!]\x1b[0m` + ` ${msg}`;
+    const text = `\x1b[31m[!]\x1b[0m ` + `${msg}`;
     printLog(text);
 }
 
