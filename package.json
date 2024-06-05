@@ -1,6 +1,6 @@
 {
   "name": "@brodeous/weather-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool that grabs weather forcast data for given location.",
   "main": "src/index.ts",
   "bin": {
