@@ -6,6 +6,7 @@ import * as debug from "./logger.js";
 import { organizeData } from "./data.js";
 import { convertToAscii } from "./generate/imgascii-converter.js";
 import { display } from "./display.js";
+import { uninstall } from "./uninstaller.js";
 
 export const config = new Config();
 export const program = new Command();
@@ -14,13 +15,14 @@ program
     .name("GetWet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
-    .version("1.0.4")
+    .version("1.0.7")
     .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")
     .option("-l, --lat_long <lat,long>", "specific latitude and longitude")
     .option("-s, --set_key <name>=<key>", "set api key")
     .option("-ls, --list_keys", "list api keys")
+    .option("-u, --uninstall", "uninstall getwet")
     .showHelpAfterError("(run -h, --help for additional information)")
     .addHelpText("after",`
 
@@ -42,9 +44,14 @@ program.parse(process.argv);
 
 const run = async () => {
     try {
+        const opts = program.opts();
+
+        if (opts.uninstall) {
+            uninstall();
+            return;
+        }
 
         await config.init();
-        const opts = program.opts();
 
         if (opts.list_keys) {
             config.list();

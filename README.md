@@ -16,6 +16,14 @@ $ npm i -g @brodeous/weather-cli
 ### Configuration
 Next you need to edit the config and add your api keys for the application to retrieve it's data.
 
+First, lets create a config file.
+```console
+$ getwet --config-init
+
+[CONFIG] initialized
+    \___ location: <home dir>/.config/getwet/getwet.conf
+```
+
 If you run the following command, you can see there are no api keys saved.
 ```console
 $ getwet --list-keys
@@ -53,6 +61,8 @@ $ getwet --set-key weatherapi=<api key>
 [CONFIG] weather_api set
 ```
 
+Or if you like to work with the files themselves, you can manually change the variables at `$HOME/.config/getwet/getwet.conf`
+
 If you run the list command again, you should now see the keys you just set.
 ```console
 $ getwet --list-keys
@@ -79,6 +89,7 @@ Options:
   -l, --lat_long <lat,long>   specific latitude and longitude
   -s, --set_key <name>=<key>  set api key
   -ls, --list_keys            list api keys
+  -u, --uninstall             uninstall getwet
   -h, --help                  display help for command
 
 
@@ -94,5 +105,4 @@ Example:
     --set-key
         $ getwet -s geolocation=<api key>
         $ getwet -s weatherapi=<api key>
-
 ```

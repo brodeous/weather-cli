@@ -1,4 +1,9 @@
 import fs from "fs";
+import path from "path";
+import { homedir } from "os";
+
+const home = homedir();
+const _dirname = path.join(home, '.config', 'getwet');
 
 class Config {
     ip_geo_api: string;
@@ -32,18 +37,24 @@ class Config {
         }
     }
 
+    #createFile = async () => {
+        fs.mkdirSync(_dirname);
+        await this.#saveFile();
+    }
+
     #readFile = async () => {
+        console.log(_dirname);
         try {
-            if (!fs.existsSync(`${__dirname}/config.json`)) {
-                await this.#saveFile();
+            if (!fs.existsSync(path.join(_dirname, 'getwet.conf'))) {
+                await this.#createFile();
             }
-            const res = fs.readFileSync(`${__dirname}/config.json`);
+            const res = fs.readFileSync(path.join(_dirname, 'getwet.conf'));
             const data = JSON.parse(res.toString());
 
             this.ip_geo_api = data.ip_geo_api;
             this.weather_api = data.weather_api;
         } catch (e) {
-            throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue reading config file. Try again or make sure there is a config.json file.\n${e}`);
+            throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue reading/writing config file. Try again or make sure there is a config.json file.\n${e}`);
         }
     }
 
@@ -52,12 +63,7 @@ class Config {
             ip_geo_api: this.ip_geo_api,
             weather_api: this.weather_api,
         }
-
-        try {
-            fs.writeFileSync(`${__dirname}/config.json`, JSON.stringify(file, null, 2));
-        } catch (e) {
-            throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue saving to config.json. Try again.`);
-        }
+        fs.writeFileSync(path.join(_dirname, 'getwet.conf'), JSON.stringify(file, null, 2));
     }
 
     list = () => {
