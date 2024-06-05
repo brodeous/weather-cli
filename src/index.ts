@@ -19,7 +19,16 @@ const main = async (opts: any) => {
             return;
         }
 
-        await config.getData();
+        await config.readFile();
+
+        // Check for API keys
+        if (config.ip_geo_api === "") {
+            debug.warn(`[\x1b[33mCONFIG\x1b0m] API Key for ipgeolocation.io is missing. Required for \"$ getwet <no_args>\"`);
+        }
+
+        if (config.weather_api === "") {
+            throw new Error(`[\x1b[33mCONFIG\x1b0m] API key for weatherapi.com is missing. Check README.md for configuration`);
+        }
 
         const geo = await fetchGeoData();
 
@@ -55,7 +64,7 @@ const conf = async (options: any) => {
             if (options.remove)
                 await config.remove();
             if (options.print)
-                config.print();
+                await config.print();
 
             process.exit(0);
         } catch (e) {
@@ -68,7 +77,7 @@ program
     .name("getwet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
-    .version("1.1.2")
+    .version("1.1.3")
     .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")

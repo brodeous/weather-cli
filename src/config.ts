@@ -15,20 +15,15 @@ class Config {
         this.weather_api = "";
     }
     
-    getData = async () => {
-        this.#readFile();
-    }
-
     init = async () => {
         await this.#createFile();
-        await this.#readFile();
-        console.log(`[\x1b[33mCONFIG\x1b[0m] initialized\n\t\\___ location: \x1b[32m${_dirname}/getwet.conf\x1b[0m`);
+        console.log(`[\x1b[33mCONFIG\x1b[0m] initialized\n\t\\___ location > \x1b[32m${_dirname}/getwet.conf\x1b[0m`);
     }
 
     edit = async () => {
         const editor = process.env.EDITOR || "nano";
         spawnSync(`${editor}`, [path.join(_dirname, "getwet.conf")], { stdio: "inherit" });
-        await this.#readFile();
+        await this.readFile();
         console.log(`[\x1b[33mCONFIG\x1b[0m] updated`);
     }
 
@@ -37,11 +32,12 @@ class Config {
         console.log(`[\x1b[33mCONFIG\x1b[0m] \x1b[31mremoved\x1b[0m`);
     }
 
-    print = () => {
+    print = async () => {
+        await this.readFile();
         let out = '\n';
-        out += "[\x1b[33mCONFIG\x1b[0m] print\n\n"
-        out += `Geolocation > ${this.ip_geo_api}\n`;
-        out += `Weather API > ${this.weather_api}\n`;
+        out += "[\x1b[33mCONFIG\x1b[0m] print\n"
+        out += `\t\\___ Geolocation > \x1b[32m${this.ip_geo_api}\x1b[0m\n`;
+        out += `\t\\___ Weather API > \x1b[32m${this.weather_api}\x1b[0m\n`;
         
         console.log(out);
     }
@@ -49,13 +45,17 @@ class Config {
     #createFile = async () => {
         if (!fs.existsSync(path.join(_dirname, 'getwet.conf'))) {
             fs.mkdirSync(_dirname);
-            await this.#saveFile();
+            const file = {
+                ip_geo_api: this.ip_geo_api,
+                weather_api: this.weather_api,
+            }
+            fs.writeFileSync(path.join(_dirname, 'getwet.conf'), JSON.stringify(file, null, 2));
         } else {
             throw new Error(`[\x1b[33mCONFIG\x1b[0m] file already exists\n\t\\___ location: \x1b[32m${_dirname}/getwet.conf\x1b[0m`);
         }
     }
 
-    #readFile = async () => {
+    readFile = async () => {
         try {
             if (!fs.existsSync(path.join(_dirname, 'getwet.conf'))) {
                 await this.#createFile();
@@ -68,14 +68,6 @@ class Config {
         } catch (e) {
             throw new Error(`[\x1b[33mCONFIG\x1b[0m] Issue reading/writing config file\n\t\\___Try again or check for config file.`);
         }
-    }
-
-    #saveFile = async () => {
-        const file = {
-            ip_geo_api: this.ip_geo_api,
-            weather_api: this.weather_api,
-        }
-        fs.writeFileSync(path.join(_dirname, 'getwet.conf'), JSON.stringify(file, null, 2));
     }
 }
 

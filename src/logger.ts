@@ -1,22 +1,20 @@
-import chalk from 'chalk';
-
 const info = (msg: string) => {
-    const text = chalk.white(`[i] ${msg}`);
+    const text = `[i] ${msg}`;
     printLog(text);
 }
 
 const ok = (msg: string) => {
-    const text = chalk.green(`[+] ${msg}`);
+    const text = (`\x1b[32m[+] ${msg}\x1b[0m`);
     printLog(text);
 }
 
 const warn = (msg: string) => {
-    const text = chalk.green(`[w] ${msg}`);
+    const text = `\x1b[33m[w] ${msg}\x1b[0m`;
     printLog(text);
 }
 
 const error = (msg: string) => {
-    const text = chalk.red(`[!]`) + ` ${msg}`;
+    const text = `\x1b[31m[!]\x1b[0m` + ` ${msg}`;
     printLog(text);
 }
 
