@@ -1,4 +1,3 @@
-import chalk from 'chalk';
 const DATA_START = 6;
 const FOOT_START = 20
 
@@ -6,9 +5,9 @@ const w = 50;
 const footer = () => {
     let data = "";
 
-    data += ` ` + chalk.bold(chalk.gray(`$ getwet\n`.padStart(w)));
-    data += ` ` + chalk.gray(`@brodeous\n`.padStart(w));
-    data += ` ` + chalk.gray(`MIT License\n`.padStart(w));
+    data += ` ` + `\x1b[1m\x1b[90m` + `$ getwet`.padStart(w) + `\x1b[0m\n`;
+    data += ` ` + `\x1b[90m` + `@brodeous`.padStart(w) + `\x1b[0m\n`;
+    data += ` ` + `\x1b[90m` + `MIT License`.padStart(w) + `\x1b[0m\n`;
     return data;
 }
 
