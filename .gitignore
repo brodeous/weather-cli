@@ -1,8 +1,6 @@
 node_modules/
 .env
 .npmignore
-config.json
 bin/
-logs
 icons/day.ts
 icons/night.ts
