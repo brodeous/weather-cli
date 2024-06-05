@@ -63,7 +63,7 @@ const conf = async (options: any) => {
 }
 
 program
-    .name("GetWet")
+    .name("getwet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
     .version("1.0.8")
@@ -93,7 +93,7 @@ Example:
 
 program
     .command("config")
-    .description("init/edit/rm/list config file")
+    .description("configure .conf file")
     .option("-i, --init", "initialize config file")
     .option("-e, --edit", "edit config file")
     .option("-rm, --remove", "remove config file")

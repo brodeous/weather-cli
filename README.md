@@ -18,7 +18,7 @@ Next you need to edit the config and add your api keys for the application to re
 
 First, lets create a config file.
 ```console
-$ getwet --config-init
+$ getwet config --init
 
 [CONFIG] initialized
     \___ location: <home dir>/.config/getwet/getwet.conf
@@ -26,9 +26,9 @@ $ getwet --config-init
 
 If you run the following command, you can see there are no api keys saved.
 ```console
-$ getwet --list-keys
+$ getwet config --print
 
-[API KEYS]
+[CONFIG] print
 
 Geolocation > 
 Weather API > 
@@ -47,27 +47,20 @@ Once the accounts are made, you need to grab the keys
 ##### Weather API
 ![weatherapi](https://raw.githubusercontent.com/brodeous/weather-cli/main/pics/Dashboard-WeatherAPI.com.png)
 
-To then add these keys to the CLI, you will want to run these commands
-##### IP Geolocation
+To then add these keys to the CLI, you will want to run the following command in add them to the appropriate variable.
 ```console
-$ getwet --set-key geolocation=<api key>
+$ getwet config --edit
 
-[CONFIG] ip_geo_api set
-```
-##### Weather API
-```console
-$ getwet --set-key weatherapi=<api key>
-
-[CONFIG] weather_api set
+[CONFIG] updated
 ```
 
 Or if you like to work with the files themselves, you can manually change the variables at `$HOME/.config/getwet/getwet.conf`
 
 If you run the list command again, you should now see the keys you just set.
 ```console
-$ getwet --list-keys
+$ getwet config --print
 
-[API KEYS]
+[CONFIG] print
 
 Geolocation > <geo key>
 Weather API > <weather key>
@@ -76,21 +69,22 @@ Weather API > <weather key>
 ## Usage
 The CLI comes with a few options to retrieve the weather information for specific places.
 ```console
-$ getwet -h
-Usage: GetWet [options] args
+$ getwet --help
+Usage: getwet [options] args
 
 A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.
 
 Options:
-  -V, --version               output the version number
-  -c, --city <city>           specific city
-  -z, --zipcode <zipcode>     specific zipcode
-  -l, --lat_long <lat,long>   specific latitude and longitude
-  -s, --set_key <name>=<key>  set api key
-  -ls, --list_keys            list api keys
-  -u, --uninstall             uninstall getwet
-  -h, --help                  display help for command
+  -V, --version              output the version number
+  -c, --city <city>          specific city
+  -z, --zipcode <zipcode>    specific zipcode
+  -l, --lat_long <lat,long>  specific latitude and longitude
+  -u, --uninstall            uninstall getwet
+  -h, --help                 display help for command
+
+Commands:
+  config [options]           configure .conf file
 
 
 Example:
