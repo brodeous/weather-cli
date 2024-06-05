@@ -14,6 +14,10 @@ class Config {
         this.ip_geo_api = "";
         this.weather_api = "";
     }
+    
+    getData = async () => {
+        this.#readFile();
+    }
 
     init = async () => {
         await this.#createFile();

@@ -19,6 +19,8 @@ const main = async (opts: any) => {
             return;
         }
 
+        await config.getData();
+
         const geo = await fetchGeoData();
 
         let userData: GeoData = {
@@ -66,7 +68,7 @@ program
     .name("getwet")
     .description(`A CLI that retrieves current weather data for a specific location.
     > No option will return data based on current public ip.`)
-    .version("1.0.8")
+    .version("1.1.2")
     .usage("[options] args")
     .option("-c, --city <city>", "specific city")
     .option("-z, --zipcode <zipcode>", "specific zipcode")
